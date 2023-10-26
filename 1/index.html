@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Exp 1</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body >
+    <h1>Area Calculator</h1>
+    <hr>
+    <h4>Gouri Umate
+        <br>
+        42371
+    </h4>
+    <div>
+
+        <h3>Area of Triangle (Heron's Formula)</h3>
+        <label>Side 1</label>
+        <input type="number" id="side1">
+
+        <label>Side 2</label>
+        <input type="number" id="side2">
+
+        <label>Side 3</label>
+        <input type="number" id="side3">
+        <br><br>
+
+        <button onclick="triangle()">Calculate</button>
+
+        <p>Area of Triangle = <span id="triangle"></span></p>
+    </div>
+
+    <div>
+        <h3>Area of Circle</h3>
+        <label>Radius</label>
+        <input type="number" id="radius" size="18" onfocus="this.value=''">
+        <br><br>
+
+        <button onclick="circle()">Calculate</button>
+
+        <p>Area of Circle = <span id="circle"></span></p>
+    </div>
+
+
+    <div>
+        <h3>Area of Rectangle</h3>
+        <label for="Length">Length</label>
+        <input type="number" id="length" size="18" onfocus="this.value=''">
+
+        <label for="width">Width</label>
+        <input type="number" id="width" size="18" onfocus="this.value=''">
+        <br><br>
+        <button onclick="rectangle()">Calculate</button>
+
+        <p>Area of Rectangle = <span id="rectangle"></span></p>
+    </div>
+</body>
+
+</html>

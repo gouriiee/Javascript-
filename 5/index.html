@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    #countdown {
+      font-size: 2em;
+      margin: 20px;
+    }
+
+    #datetimeInput {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Countdown Timer</h1>
+  <hr>
+  <h4>Gouri Umate <br> 42371</h4>
+
+  <h2>
+    <label for="datetimeInput">Enter date and time:</label>
+    <input type="datetime-local" id="datetimeInput" required>
+    <br>
+    <button onclick="startCountdown()">Start Countdown</button>
+
+    <div id="countdown"></div>
+  </h2>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
